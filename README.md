@@ -68,10 +68,12 @@ const sketch = (P: p5) => {
 * `npm run dev` : to start dev server for development
 * `npm run build` : to compile html and bundles into a zip file
 
-## random function
+## Random function
 
-use `rand()` instead of either `Math.random()`, `p5.random()` or `fxrand()`.
-`rand()` will return desirable random value. On the build mode, `fxrand()` will be chosen. On the dev mode, `Math.random()` will be chosen instead.
+Let's use `rand()` instead of either `Math.random()`, `p5.random()` or `fxrand()`.  
+`rand()` will return a desirable random value.  
+On the build mode, `fxrand()` will be chosen so the platform can generate unique NFT.  
+On the dev mode, `Math.random()` will be chosen instead so developer can iterate random variations quickly.
 
 ## Reference
 
