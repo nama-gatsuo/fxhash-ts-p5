@@ -1,22 +1,22 @@
 {
-    "name": "fxhash-template",
+    "name": "fxhash-ts-p5",
     "version": "1.0.0",
     "description": "fxhash template",
     "main": "index.ts",
     "scripts": {
-        "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+        "prettier": "prettier \"src/**/*.ts\" --write",
         "lint": "eslint \"src/**/*.ts\" --fix",
+        "fix": "npm run prettier && npm run lint",
         "build": "webpack --config ./config/webpack.config.prod.js",
         "dev": "webpack serve --config ./config/webpack.config.dev.js"
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.22.0",
-        "@typescript-eslint/parser": "^5.22.0",
+        "@typescript-eslint/eslint-plugin": "^5.29.0",
+        "@typescript-eslint/parser": "^5.29.0",
         "adm-zip": "^0.5.9",
         "copy-webpack-plugin": "^10.2.4",
         "eslint": "^8.14.0",
         "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-prettier": "^4.0.0",
         "html-webpack-plugin": "^5.5.0",
         "prettier": "^2.6.2",
         "ts-loader": "^9.3.0",

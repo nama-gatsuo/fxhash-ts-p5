@@ -8,7 +8,6 @@ module.exports = {
         filename: "main.js",
         clean: true,
     },
-    
     resolve: {
         extensions: [".js", ".ts"],
         modules: [path.resolve("./src"), path.resolve("./node_modules")],
