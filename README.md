@@ -1,3 +1,20 @@
+# fxhash-ts-p5
+
+fxhash template for WebPack, TypeScript and p5.js.
+Let us be more creative with assistance of TypeScript🎨
+
+## Get started
+
+Clone this repo and install dependency modules.
+
+```
+> git clone https://github.com/nama-gatsuo/fxhash-ts-p5
+> npm i
+```
+
+Start coding from '.src/index.ts'
+
+```ts
 import * as p5 from 'p5';
 import { rand } from './utils/rand';
 
@@ -42,3 +59,15 @@ const sketch = (P: p5) => {
         if (msg) msg.remove();
     }
 })();
+
+```
+
+## Commands
+
+* `npm run fix` : to run ESLint and prettier to format source code nicely.
+* `npm run dev` : to start dev server for development
+* `npm run build` : to compile html and bundles into a zip file
+
+## Reference
+
+* [MatthieuSegret/fxhash-template](https://github.com/MatthieuSegret/fxhash-template)
