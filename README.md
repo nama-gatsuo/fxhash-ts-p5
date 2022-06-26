@@ -32,7 +32,7 @@ const sketch = (P: p5) => {
     };
 
     P.setup = () => {
-        
+
         const canvas = P.createCanvas(window.innerWidth, window.innerHeight);
         canvas.id('p5');
 
@@ -67,6 +67,11 @@ const sketch = (P: p5) => {
 * `npm run fix` : to run ESLint and prettier to format source code nicely.
 * `npm run dev` : to start dev server for development
 * `npm run build` : to compile html and bundles into a zip file
+
+## random function
+
+use `rand()` instead of either `Math.random()`, `p5.random()` or `fxrand()`.
+`rand()` will return desirable random value. On the build mode, `fxrand()` will be chosen. On the dev mode, `Math.random()` will be chosen instead.
 
 ## Reference
 
