@@ -82,4 +82,5 @@ On the dev mode, `rand()` will return `Math.random()` value so a developer can i
 
 ## Reference
 
-* [MatthieuSegret/fxhash-template](https://github.com/MatthieuSegret/fxhash-template)
+* [fxhash / fxhash-webpack-boilerplate](https://github.com/fxhash/fxhash-webpack-boilerplate)
+* [MatthieuSegret / fxhash-template](https://github.com/MatthieuSegret/fxhash-template)
