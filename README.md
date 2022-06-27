@@ -33,7 +33,7 @@ const sketch = (P: p5) => {
 
     P.setup = () => {
 
-        const canvas = P.createCanvas(window.innerWidth, window.innerHeight);
+        const canvas = P.createCanvas(P.windowWidth, P.windowHeight);
         canvas.id('p5');
 
     };
@@ -41,6 +41,11 @@ const sketch = (P: p5) => {
     P.draw = () => {
 
     };
+
+    P.windowResized = () => {
+        P.resizeCanvas(P.windowWidth, P.windowHeight);
+    }
+
 };
 
 // entry point
@@ -72,8 +77,8 @@ const sketch = (P: p5) => {
 
 Let's use `rand()` instead of either `Math.random()`, `p5.random()` or `fxrand()`.  
 `rand()` will return a desirable random value.  
-On the build mode, `fxrand()` will be chosen so the platform can generate unique NFT.  
-On the dev mode, `Math.random()` will be chosen instead so developer can iterate random variations quickly.
+On the build mode, `rand()` will return `fxrand()` value so the platform can generate unique NFT.  
+On the dev mode, `rand()` will return `Math.random()` value so a developer can iterate random variations quickly.
 
 ## Reference
 

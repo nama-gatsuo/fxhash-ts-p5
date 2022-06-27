@@ -16,7 +16,7 @@ const sketch = (P: p5) => {
 
     P.setup = () => {
         
-        const canvas = P.createCanvas(window.innerWidth, window.innerHeight);
+        const canvas = P.createCanvas(P.windowWidth, P.windowHeight);
         canvas.id('p5');
 
     };
@@ -24,6 +24,10 @@ const sketch = (P: p5) => {
     P.draw = () => {
 
     };
+
+    P.windowResized = () => {
+        P.resizeCanvas(P.windowWidth, P.windowHeight);
+    }
 };
 
 // entry point
